@@ -1,7 +1,35 @@
 @(message: String)
 
-@main("Welcome to Play") {
-
-    @play20.welcome(message)
-
+@main("Challenge accepted!") {
+    <div id="outer">
+        <div id="middle">
+            <!--@(message)-->
+            <div id="parentDiv" class="parent-element">
+                <div id="inputDiv">
+                    This web-app will calculate the time interval when the site had the most usage. It takes the data from a list of (loginTime, logoutTime, userId). For example:
+                    <form id="formId" action="@routes.Application.addInputLine()" method="post">
+                        <textarea name="inputData" rows="6">
+(100, 300, fred)
+(100, 150, jill)
+(120,130, hanah)
+(121,129, sasha)
+(301, 345, dave)
+(400,500, ted)
+(400,500, ted)
+(400,500, ted)
+(400,500, ted)</textarea>
+                        <button>Submit</button>
+                    </form>
+                </div>
+                <div id="success" title="Most used time periods:">
+                    <textarea id="successTA" rows="6">
+                        @*placeholder JS*@
+                    </textarea>
+                </div>
+            </div>
+            <div id="graph">
+                @*placeholder for JS*@
+            </div>
+        </div>
+    </div>
 }

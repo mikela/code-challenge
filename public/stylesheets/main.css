@@ -1,0 +1,75 @@
+body {
+  font: 14px Verdana,Arial,sans-serif;
+  background: lightblue;
+}
+textarea {
+  width: 100%;
+  resize: vertical;
+  box-sizing: border-box;
+  margin: 5px 0;
+}
+button {
+  width: 100%;
+  font: 14px Verdana,Arial,sans-serif;
+}
+
+#outer {
+    display: table;
+    position: absolute;
+    height: 95%;
+    width: 95%;
+}
+#middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+#inputDiv {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  background: white;
+  box-shadow: 5px 5px 5px #4a4a4a;
+  min-width: 125px;
+  position: relative;
+  border-radius: 5px;
+}
+@media only screen and (max-width : 800px) {
+  #inputDiv {
+    width: 90%;
+  }
+}
+
+/* The graph */
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.line {
+  fill: none;
+  stroke: #000090;
+  stroke-width: 1px;
+}
+
+/* The dialog */
+.success-dialog {
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #4a4a4a;
+}
+.ui-widget.success-dialog {
+  font: 14px Verdana,Arial,sans-serif;
+}
+.ui-widget-content.success-dialog {
+  background: white;
+  color: black;
+}
+.ui-dialog.success-dialog {
+  padding: 10px;
+}
+.ui-dialog.success-dialog .ui-dialog-titlebar {
+  border-radius: 5px 5px 0 0;
+}
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}
