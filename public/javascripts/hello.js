@@ -2,7 +2,7 @@ var $success =$("#success");
 $success.hide();
 
 $.get("/inputLines", function (dataSol) {
-    console.log(dataSol);
+    //console.log(dataSol);
     if (dataSol.head > -1) {
         $("#parentDiv").hide();
 
