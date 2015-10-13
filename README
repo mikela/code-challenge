@@ -1,4 +1,4 @@
-This is your new Play application
-=================================
-
-This file will be packaged with your application, when using `activator dist`.
+This is a Code-Challenge/Side-Project to develop a prototype of a website that:
+1. Gets data from the user.
+2. Reads/Writes to a DB and performs calculations using Scala.
+3. Draws the solution using a 3rd party library (d3js.org).
